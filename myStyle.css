@@ -1,0 +1,200 @@
+﻿/*
+ *author:liusan
+ */
+ 
+/*
+ *smart-menu: *白色背景的圆形菜单按钮,3根横线
+ *hover时有三根线距离变大的动态效果
+ *click时中间的线会翻转
+ */
+div.smart-menu{
+	display:block;
+	height:45px;
+	width:45px;
+	background:#F4F4F4;
+	border-radius:50%;
+	position:relative;
+	border:1px solid #999;
+}
+div.smart-menu:hover{
+	cursor:pointer;
+}
+
+div.smart-menu>div{
+	width:20px;
+	height:0;
+	border-top:1px solid #000;
+	position:absolute;
+	transform:translate(12px,22px);
+	transition:all 0.2s linear;
+}
+div.smart-menu>div.smart-menu-line1{
+	transform:translate(12px,18px);
+}
+div.smart-menu>div.smart-menu-line2{
+	transform-origin:50% 50%;
+	transform:translate(12px,22px) rotate(0deg);
+}
+div.smart-menu>div.smart-menu-line3{
+	transform:translate(12px,26px);
+}
+div.smart-menu:hover>div.smart-menu-line1{
+	transform:translate(12px,14px);
+}
+div.smart-menu:hover>div.smart-menu-line3{
+	transform:translate(12px,30px);
+}
+
+/*
+ * 三圆点的按钮,有旋转效果
+ */
+div.smart-dots{
+	display:block;
+	height:45px;
+	width:45px;
+	background:#F4F4F4;
+	border-radius:50%;
+	position:relative;
+	border:1px solid #999;
+}
+div.smart-dots>div.smart-3dots{
+	height:4px;
+	overflow:hidden;
+	position:absolute;
+	transform:translate(12px,20px);
+	top:0;
+	left:0;
+	transition:all linear 0.3s;
+	transform-origin:50% 50%;
+}
+div.smart-dots>div.smart-3dots>i{
+	display:inline-block;
+	width:4px;
+	height:4px;
+	background:#5C5C5C;
+	border-radius:50%;
+	float:left;
+}
+div.smart-dots>div.smart-3dots>i.center{
+	margin-right:4px;
+	margin-left:4px;
+}
+div.smart-dots:hover{
+	background:#FFFFFF;
+	cursor:pointer;
+}
+div.smart-dots:hover>div.smart-3dots{
+	transform:translate(12px,20px) rotate(180deg);
+}
+
+
+/*
+ * 左右箭头,有旋转(箭头方向改变)特效
+ */
+div.smart-arrow{
+	width:46px;
+	height:46px;
+	background:#363636;
+	position:relative;
+}
+div.smart-arrow:hover{
+	cursor:pointer;
+}
+
+div.smart-arrow>div{
+	position:absolute;
+    height:30px;
+    width:20px;
+    top:8px;
+    left:14px;
+}
+div.smart-arrow>div.smart-arrow-right{
+	transform:rotate(0deg);
+}
+div.smart-arrow>div.smart-arrow-bottom{
+	transform:rotate(90deg);
+}
+div.smart-arrow>div.smart-arrow-left{
+	transform:rotate(180deg);
+}
+div.smart-arrow>div.smart-arrow-up{
+	transform:rotate(270deg);
+}
+div.smart-arrow>div>div{
+	height:1px;
+	width:15px;
+	background:#FFFFFF;
+	position:absolute;
+	transform-origin:50% 50%;
+	top:50%;
+} 
+
+div.smart-arrow div.smart-arrow-couple1{
+	transform:translate(0,-5px) rotate(45deg);
+	transition:all 0.3s linear;
+}
+div.smart-arrow div.smart-arrow-couple2{
+	transform:translate(0,5px) rotate(-45deg);
+	transition:all 0.3s linear;
+}
+
+div.smart-arrow:hover div.smart-arrow-couple1{
+	transform:translate(0,-6.5px) rotate(60deg);
+	transition:all 0.4s linear;
+}
+div.smart-arrow:hover div.smart-arrow-couple2{
+	transform:translate(0,6.5px) rotate(-60deg);
+	transition:all 0.4s linear;
+}
+
+/*
+ *折叠相册,动态的切换图片,折叠效果
+ *
+ */
+div.fold-album{
+	width:940px;
+	height:529px;
+	border:1px solid #eee;
+	position:relative;
+	transform:rotateX(0deg);
+	perspective:2000px;
+}
+
+div.fold-img{
+	position:absolute;
+	opacity:1;
+	overflow:hidden;
+
+}
+div.fold-img img{
+	width:940px;
+	height:529px;
+}
+
+div.fold-wrap{
+	opacity:1;
+	width:100%;
+	height:50%;
+	position:absolute;
+	overflow:hidden;
+	transform-style:preserve-3d;
+	transition:all 1s linear;
+	transform:rotateX(0deg);
+
+}
+
+div.fold-album:hover div.fold-wrap{
+	transform:rotateX(-180deg);
+}
+
+div.fold-wrap-all{
+	width:100%;
+	height:200%;
+	backface-visibility:hidden;
+}
+
+div.do-fold{
+	transform:rotateX(-180deg);
+}
+
+

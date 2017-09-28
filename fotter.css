@@ -1,0 +1,53 @@
+﻿#footer ul{
+	 margin:0px;
+    padding:0px;
+    border:none;
+    list-style:none;
+}
+#footer div.container>div{
+	width:256px;
+	height:216px;
+	margin-left:50px;
+	float:left;
+}
+#footer div.container>div>a{
+	display:block;
+	width:50px;
+	height:50px;
+	background:url(images/biao.jpg);
+}
+#footer #usd{
+	width:92px;
+	height:40px;
+	border:1px solid #ddd;
+}
+#footer #language{
+	width:92px;
+	height:60px;
+	border:1px solid #ddd;
+}
+#footer ul{
+	width:256px;
+	height:216px;
+	float:left;
+}
+#footer ul p{
+	font-size:16px;
+	font-famliy:"Microsoft YaHei";
+	margin-bottom:30px;
+}
+#footer ul li a{
+	color:#ddd;
+}
+#footer ul li b{
+	display:inline-block;
+	transition:all 0.3s linear;
+	width:0;
+	overflow:hidden;
+}
+#footer ul li:hover b{
+	width:16px;
+}
+#footer ul li:hover a{
+	color:#000;
+}

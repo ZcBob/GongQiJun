@@ -1,0 +1,258 @@
+
+
+
+/*--------------------通用样式-----------------------*/
+body{
+	min-width:1280px;
+	background:rgba(255, 255, 255, 0.3);
+	font:14px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	margin:0;
+	padding:0;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+img{
+	vertical-align:middle;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+/*------------------------特殊样式-------------------*/
+/*用于居中的主要内容*/
+.container{
+	width:1280px;
+	margin:0 auto;
+}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.wrap-span{
+	position:relative;
+	overflow:hidden;
+	color:#39201B;
+}
+
+.wrap-span>span:before{
+	position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    color: #fed370;
+    content: attr(title);
+    transition: width 0.5s cubic-bezier(0.7,0,0.3,1);
+	 width:0;
+}
+.wrap-span:hover span:before{
+	width:100%;
+}
+
+
+div.intro-desc{
+	padding-top:50px;
+	text-align:center;
+	font-family: Gotham SSm,sans-serif;
+}
+
+div.intro-desc h1{
+    font-size: 24px;
+	color:#333;
+	letter-spacing:4px;
+	font-family: Microsoft Yahei;
+	margin:25px auto;
+	font-weight:600;
+}
+div.intro-desc p{
+    font-size: 16px;
+	width:800px;
+	margin:0 auto;
+	margin-bottom:80px;
+	color:#999;
+	font-family:Microsoft Yahei;
+}
+
+.header-back{
+	width:100%;
+	background:url(images/all4.jpg) no-repeat;
+	height:650px;
+	opacity:0.8;
+	background-size:cover;
+	overflow:hidden;
+}
+div.header-fixed-wrapper{
+	width:100%;
+	position:fixed;
+	height:100px;
+	top:0;
+	z-index:10;
+	background:transparent;
+}
+
+/*头部横条,fixed*/
+.header-fixed{
+	width:100%;
+	position:fixed;
+	height:100px;
+	top:0;
+	z-index:1000;
+	transition:background 0.3s linear,top 0.6s linear 0.4s;
+}
+div.header-transparent{
+	background:transparent;
+}
+
+div.header-down{
+	background:rgba(211,238,246,1);
+}
+
+/*头部logo*/
+.header-logo{
+	display:block;
+	height:60px;
+	margin:20px 50px;
+	float:left;
+}
+
+.header-logo>p>img{
+	width:50px;
+	height:50px;
+}
+
+.header-logo>h1{
+
+	line-height:50px;
+	height:50px;
+	font-size:36px;
+	font-family:"FangSong";
+}
+
+
+/*头部导航栏*/
+.header-nav{
+	float:right;
+	margin-right:50px;
+}
+
+.header-nav>ul>li{
+	float:left;
+	width:100px;
+	height:100px;
+	position:relative;
+}
+.header-nav>ul>li>a{
+
+	height:50px;
+	line-height:50px;
+	margin-top:25px;
+	display:block;
+	font-size:20px;
+	font-family:"Microsoft Yahei";
+	position:absolute;
+	border-bottom:0;
+}
+
+.header-nav div.bottom-line{
+	height:2px;
+	background:#fed370;
+	width:0;
+	transition: width 0.5s cubic-bezier(0.7,0,0.3,1);
+}
+
+.header-nav>ul>li>a:hover div.bottom-line{
+	width:100%;
+} 
+/******************footer****************/
+#footer{
+	background:#f7f7f7;
+	padding-top:80px;
+	height:320px;
+}
+
+#footer div.container>div{
+	width:206px;
+	height:216px;
+	float:left;
+	padding-left:50px;
+}
+#footer div.container>div>a{
+	display:block;
+	width:35px;
+	height:45px;
+	background:url(images/images/features-3a.png);
+	margin-bottom:30px;
+}
+#footer #usd{
+	width:92px;
+	height:40px;
+	line-height:40px;
+	border:1px solid #ddd;
+	margin-bottom:10px;
+
+	text-align:center;
+	padding-right:20px;
+	box-sizing:border-box;
+}
+#footer #language{
+	width:92px;
+	height:60px;
+	line-height:60px;
+	border:1px solid #ddd;
+	text-align:center;
+	padding-right:20px;
+	box-sizing:border-box;
+}
+#footer ul{
+	width:256px;
+	height:216px;
+	float:left;
+}
+#footer ul p{
+	font-size:16px;
+	font-weight:bold;
+	font-family:"Microsoft YaHei";
+	margin-bottom:30px;
+	color:#000;
+
+}
+#footer ul li a{
+	color:#777;
+	line-height:40px;
+	transition: color .3s ease;
+}
+#footer ul li b{
+	display:inline-block;
+	transition:all 0.3s linear;
+	width:0;
+	overflow:hidden;
+}
+#footer ul li:hover b{
+	width:16px;
+}
+#footer ul li:hover a{
+	color:#000;
+}
+
+div.smart-menu{
+	position:absolute;
+	right:20px;
+	top:25px;
+	background:transparent;
+	z-index:2000;
+}

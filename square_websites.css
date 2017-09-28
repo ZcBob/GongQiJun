@@ -1,0 +1,396 @@
+
+/**********视频部分*******/
+.object-wrapper{
+	    position: relative;
+    width: 602px;
+    height: 396px;
+    left: 103px;
+    top: 72px;
+    overflow: hidden;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    transition: -webkit-filter .2s ease;
+    transition: filter .2s ease;
+    transition: filter .2s ease,-webkit-filter .2s ease;
+}
+
+.object-wrapper>video{
+	position: absolute;
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   object-fit: cover;
+   object-position: center center;
+}
+.domain-back{
+    transition:margin-left ease 1s;
+    position: fixed;
+    overflow: hidden;
+    width: 800px;
+    height: 800px;
+    top: 80px;
+	 left:50%;
+	 margin-left:1000px;
+    z-index: 100;
+	 background:url(images/tablet.webp) no-repeat;
+	 background-size:contain;
+	 box-sizing:border-box;
+}
+
+div.smart-menu{
+	border:1px solid #000;
+}
+
+/*****************/
+
+
+#christmas{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+
+	height:150px;
+}
+.christmas-road{
+	width:inherit;
+	height:150px;
+	position:absolute;
+	right:0;
+	transition:all 5s linear;
+}
+
+#christmas img{
+	height:150px;
+	position:absolute;
+	left:0;
+	display:block;
+}
+
+div.header-fixed{
+	background:#A6CA5C;
+}
+
+#header{
+	height:350px;
+	background:url(gqj-images/title2.jpg) no-repeat;
+	background-size:cover;
+}
+#head_content{
+	height:100px;
+	line-height:100px;
+}
+#head_content span{
+	margin-left:50px;
+}
+.header_navigation{
+	float:left;
+	margin-left:120px;
+}
+.header_navigation li{
+	display:inline-block;
+	color:#fff;
+	padding-left:30px;
+	width:70px;
+}
+
+/*页头大写内容*/
+.sqc_row{
+	height:142px;
+	padding-left:99px;
+	padding-top:150px;
+	text-shadow:10px 5px 5px  #000;
+}
+.sqc_row h1{
+	font-size:40px;
+	color:#Adf;
+	font-family:"youyuan";
+	cursor:pointer;
+	transition:all 0.5s ease;
+	width:400px;
+	text-shadow:10px 5px 5px  #000;
+}
+.sqc_row h1:hover{
+	text-shadow:30px 5px 5px #000;
+}
+
+
+.sqc_list_l{
+	float:left;
+	margin-top:40px;
+}
+.sqc_list_r{
+	margin-top:40px;
+	float:left;
+	cursor:pointer;
+}
+.sqc_list_l{
+	width:250px;
+	color:#adf;
+	border-right:2px solid #a8a8aa;
+}
+.sqc_list_l:first-child{
+	display:inline-block;
+	height:65px;
+}
+.sqc_list_l sup{
+	position:relative;
+	top:-20px;
+}
+.sqc_list_l u{
+	font-size:50px;
+}
+.sqc_list_r p{
+	max-width:420px;
+	font-size:15px;
+	line-height:1.75em;
+	color:#ccdacd;
+	margin-left:20px;
+	transition:all 0.5s ease;
+}
+.sqc_list_r p a{
+	color:inherit;
+}
+.sqc_list_r p:hover{
+	color:#fc1;
+}
+
+#template_grid{
+	width:1281px;
+	margin-left:99px;
+	box-sizing:border-box;
+}
+#photowall{
+	width:1281px;
+	margin-left:70px;
+	box-sizing:border-box;
+}
+/*主体*/
+#template_grid h1{
+	font-size:18px;
+	letter-spacing:0.08em;
+	line-height:1.3em;
+	width:1151px;
+	margin-top:40px;
+}
+#template_grid p{
+	color:#c1c1c1;
+	font-size:12px;
+}
+#template_grid span{
+	float:left;
+	display:inline-block;
+	margin:20px 0px;
+}
+#template_grid ul>li{
+	color:#c1c1c1;
+	letter-spacing:0.15em;
+	font-weight:400;
+	float:left;
+	margin:20px 10px;
+}
+#template_grid ul li>a{
+	color:#a8a8aa;
+}
+#template_grid ul li>a:hover{
+	color:#5a913f;
+}
+
+#photowall .pad{
+	width:380px;
+	height:355px;
+	background:url(images/tablet.webp) no-repeat;
+	background-size:cover;
+}
+#photowall .comp{
+	width:383px;
+	height:330px;
+	background:url(images/laptop.webp) no-repeat;
+	background-size:cover;
+}
+#photowall .tv{
+	width:403px;
+	height:319px;
+	background:url(images/monitor.webp) no-repeat;
+	background-size:cover;
+}
+#photowall.first-child{
+	margin-top:100px;
+}
+.pic-row:before{
+	content:"";
+	display:block;
+	clear:both;
+}
+.pad,.comp,.tv{
+	float:left;
+	position:relative;
+	margin:10px 10px;
+}
+
+.pad img{
+	position:absolute;
+		top:0;
+	left:0;
+	width:300px;
+	height:197px;
+}
+.comp img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:300px;
+	height:197px;
+}
+.tv img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:354px;
+	height:206px;
+}
+/*页头a动画效果*/
+.fadeIn-underlinie{
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	padding: 2px;
+}
+
+.fadeIn-underlinie::before {
+	 content:'';
+	 position:absolute;
+	 bottom:-3px;
+	 left:0;
+	 height:2px;
+	 background-color:#fff;
+	 width:0;
+	 transition:width 0.2s linear;
+	 transition:width 0.2s linear;
+}
+
+.fadeIn-underlinie:hover::before {
+	width:100%;
+	transition:width 0.2s linear;
+	transition:width 0.2s linear;
+ }
+ #template_grid.fadeIn-underlinie:hover::before {
+	background-color:#5a913f;
+}
+
+
+
+
+
+
+
+#photowall .pic-row>div{
+	position:relative;
+	cursor:pointer;
+}
+
+#photowall .pic-row .pad>div{
+	width:300px;
+	height:197px;
+	overflow:hidden;
+	position:relative;
+   top:35px;
+   left:44px;
+}
+
+#photowall .pic-row .comp>div{
+	width:300px;
+	height:197px;
+	overflow:hidden;
+	position:relative;
+       top: 32px;
+    left: 42px;
+}
+
+#photowall .pic-row .tv>div{
+	width:354px;
+	height:206px;
+	overflow:hidden;
+	position:relative;
+   top: 14px;
+    left: 13px;
+
+}
+
+#photowall  img{
+	transition:all 0.6s cubic-bezier(.694,.0482,.335,1) 0.1s;
+}
+
+.comp .hover-mask,.pad .hover-mask,.tv .hover-mask{
+	position:absolute;
+	height:60px;
+	bottom:-60px;
+	width:100%;
+	transition: all .6s cubic-bezier(.694,.0482,.335,1) 0.1s;
+	background:#fff;
+	border-top-left-radius:25%;
+	border-top-right-radius:25%;
+	text-align:center;
+}
+.hover-mask h2{
+	margin-top:5px;
+	margin-bottom:5px;
+	height:20px;
+	line-height:20px;
+	font-size:18px;
+
+}
+
+
+
+.comp>div:hover .hover-mask,.pad>div:hover .hover-mask ,.tv>div:hover .hover-mask{
+	bottom:0;
+}
+
+
+.comp>div:hover img,.pad>div:hover img,.tv>div:hover img{
+	top:-30px;
+}
+
+
+
+.video-close{
+	width:30px;
+	height:30px;
+	position:absolute;
+	background:#E6E5E6;
+	top:470px;
+	left:400px;
+	cursor:pointer;
+	z-index:4000;
+}
+
+.video-close .close-1{
+	position:absolute;
+	width:25px;
+	height:2px;
+	background:#000;
+	top:15px;
+	transform-origin:50%,50%;
+	transform:rotate(45deg);
+	transition:all 0.3s linear;
+}
+
+.video-close .close-2{
+	position:absolute;
+	width:25px;
+	height:2px;
+	background:#000;
+	top:15px;
+	transform-origin:50%,50%;
+	transform:rotate(-45deg);
+	transition:all 0.3s linear;
+}
+.video-close:hover .close-1{
+	transform:rotate(35deg);
+	height:3px;
+}
+.video-close:hover .close-2{
+	transform:rotate(-35deg);
+		height:3px;
+}
